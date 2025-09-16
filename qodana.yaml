@@ -1,0 +1,15 @@
+version: "1.0"
+linter: jetbrains/qodana-dotnet:2024.3
+profile:
+  name: qodana.recommended
+include:
+  - name: CheckDependencyLicenses
+exclude:
+  - name: All
+    paths:
+      - ProjectLighthouse.Localization
+      - ProjectLighthouse/Migrations
+      - ProjectLighthouse/StaticFiles/css/themes
+      - ProjectLighthouse/StaticFiles/safari-pinned-tab.svg
+dependencyIgnores:
+  - name: "SixLabors.ImageSharp" # We're open source, so we come under the Apache License

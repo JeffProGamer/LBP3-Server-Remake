@@ -1,0 +1,9 @@
+project_id_env: CROWDIN_PROJECT_ID
+api_token_env: CROWDIN_PERSONAL_TOKEN
+
+preserve_hierarchy: true
+files:
+  - source: /ProjectLighthouse.Localization/*.resx
+    translation: /ProjectLighthouse.Localization/%file_name%.lang-%locale%.%file_extension%
+    ignore:
+      - /ProjectLighthouse.Localization/%file_name%.*.%file_extension%
