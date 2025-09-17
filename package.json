@@ -1,5 +1,5 @@
 {
-  "name": "lbp3-server",
+  "name": "lbp3-server-remake",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
